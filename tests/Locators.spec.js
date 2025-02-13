@@ -2,9 +2,9 @@ import {test,expect} from '@playwright/test'
 test('Locators', async({page})=>{
     await page.goto('https://demoblaze.com/');
     //click on login button using locator
-   // await page.locator('id=login2').click; 
-   // or
-    await page.click('id=login2');
+    await page.locator('id=login2').click; 
+    // or
+    //await page.click('id=login2');
     //entering text into the field
     await page.locator('id=loginusername').fill('pavanol');
     //await page.fill('id=loginusername','Admin');
